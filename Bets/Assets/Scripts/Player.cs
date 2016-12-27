@@ -59,7 +59,6 @@ public class Player : MonoBehaviour
         return position;
     }
 
-
     void Update()
     {
         List<Touch> touches = InputHelper.GetTouches();
