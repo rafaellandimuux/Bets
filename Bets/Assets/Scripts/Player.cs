@@ -19,8 +19,6 @@ public class Player : MonoBehaviour
 
     public Transform Transform;
 
-    
-
     void Start()
     {
     }
@@ -59,8 +57,19 @@ public class Player : MonoBehaviour
         return position;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("OnCollisionEnter");
+    }
+
     void Update()
     {
+        
+
+
+
+
+
         List<Touch> touches = InputHelper.GetTouches();
         if (touches.Count == 1)
         {

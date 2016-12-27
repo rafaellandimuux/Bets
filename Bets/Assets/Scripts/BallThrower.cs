@@ -21,7 +21,7 @@ public class BallThrower : MonoBehaviour
         direction.y = distance * Mathf.Tan(radianAngle);
         distance += h / Mathf.Tan(radianAngle);
 
-        float velocity = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * a));
+        float velocity = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * radianAngle));
         return velocity * direction.normalized;
     }
 
